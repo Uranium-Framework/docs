@@ -1,0 +1,60 @@
+repo_url: "https://github.com/Uranium-Framework/Uranium-Core"
+repo_name: "UraniumFramework/Uranium-Core"
+site_name: Uranium Documentation
+copyright: Copyright &copy; 2022 Black Magic Studios and Sunrise Development Team
+
+
+
+nav:
+  - Home: index.md
+  - Documentation: 
+      - SetUp: Documentation/SetUp.md
+      - Usage: Documentation/Usage.md
+      - Settings: 
+          - Imports: Documentation/Settings/Extends.md
+          - General: Documentation/Settings/General.md
+  - API References: 
+          - Introduction: API/Introduction.md
+          - Server:
+              - ProfileService: API/Server/profileService.md
+          - Client: 
+              - SunriseGUI: 
+                   - Icon: API/Client/GUI/icon.md
+                   - Roact: API/Client/GUI/roact.md
+              - Bezier: API/Client/bezier.md
+          - Shared: 
+              - AssetManagement: API/Shared/Assets.md
+  - Releases: Releases.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - meta
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+            - site/.icons
+theme: 
+  icon:
+    admonition:
+      <type>: <icon>
+  palette:
+   scheme: slate
+   primary: red
+   accent: deep orange
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - toc.follow
+  logo: assets/favicon.png
+  favicon: assets/favicon.png
+plugins:
+  - search
