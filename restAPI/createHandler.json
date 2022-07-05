@@ -1,0 +1,36 @@
+
+[
+{
+    "Description": "Runs a passed in ModuleScript. It has multiple functions called: 'pre_run', 'run' and 'release' each handled by the framework. Using the 'flags' you can define a few rule for the handler to follow.",
+    
+    "Constructors": [
+        {
+            "createHandler": "UraniumFramework.createHandler(name: string, handle: ModuleScript, flags: {})"
+        }
+    ],
+    "Functions": "Nil",
+    
+    "Methods": "Nil",
+    
+    "Events": "Nil",
+
+    "Returns": [
+        {
+            "directory": "Returns the folder that all handler events are stored",
+            "state": "Returns the current state that the handler is at. These include: 'PreRan', 'Ran', 'Released' and 'Completed'."
+        }
+    ],
+    
+    "OtherInformation": [
+        {
+            "Flags": {
+                "doPre_Run": "Determines if the handler should perform the pre_run function. By defualt this function is set to False!",
+                "scriptTimeOut": "Determines when a script times out when there is a conditional loop. Eg if there is no return from the pre_run function within 5 seconds (default) the script will be released.",
+                "data": "Used as an argument for the handled script. You can pass any table of data into the flag and it will be passed into the handled script.",
+                "API": ""
+            }
+        }
+    ]
+}
+]
+
