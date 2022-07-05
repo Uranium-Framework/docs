@@ -10,9 +10,7 @@ nav:
   - Documentation: 
       - SetUp: Documentation/SetUp.md
       - Usage: Documentation/Usage.md
-      - Settings: 
-          - Imports: Documentation/Settings/Extends.md
-          - General: Documentation/Settings/General.md
+      - RESTful API: Documentation/RESTAPI.md
   - API References: 
           - Introduction: API/Introduction.md
           - Server:
@@ -20,10 +18,8 @@ nav:
           - Client: 
               - SunriseGUI: 
                    - Icon: API/Client/GUI/icon.md
-                   - Roact: API/Client/GUI/roact.md
+                   - UI: API/Client/GUI/ui.md
               - Bezier: API/Client/bezier.md
-          - Shared: 
-              - AssetManagement: API/Shared/Assets.md
   - Releases: Releases.md
 
 markdown_extensions:
